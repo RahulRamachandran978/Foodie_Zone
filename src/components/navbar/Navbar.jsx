@@ -7,7 +7,7 @@ import DarkMode from './DarkMode';
 const Navbar = () => {
   return (
     <>
-        <div className='shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200'>
+        <div className='shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200 fixed top-0 left-0 w-full z-50'>
             <div className='container py-3 sm:py-0'>
                 <div className="flex justify-between items-center">
                     <div>
@@ -15,11 +15,11 @@ const Navbar = () => {
                         <img src={Logo} alt="Foodie Zone" className='w-10' />Foodie
                         </a>
                     </div>
-                    <div className='flex items-center gap-5'>
+                    <div className='flex items-center gap-4'>
                         <div>
                             <DarkMode />
                         </div>
-                        <ul className='flex sm:hidden gap-4'>
+                        <ul className='hidden sm:flex items-center gap-4'>
                             <li>
                                 <a href="#" className='inline-block py-4 px-4 hover:text-primary'>Home</a>
                             </li>
